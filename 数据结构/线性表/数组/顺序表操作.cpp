@@ -55,26 +55,5 @@ void DisCreat(SqList A,SqList* B,SqList* C){
 	}
 }
 int main(){
-	SqList L,B,C;
-	ElemType e;
-	ElemType data[9] = {11,-22,33,-3,-88,21,77,0,-9};
-	InitList(&L);
-	InitList(&B);
-	InitList(&C);
-	for(int i = 1;i <= 9;i++){
-		ListInsert(&L,i,data[i - 1]);
-	}
-	cout << "插入完成后L = "<< endl;
-	ListPrint(L);
-	ListDelete(&L,1,&e);
-	cout << "删除第一个后L = " << endl;
-	ListPrint(L);
-	DisCreat(L,&B,&C);
-	cout << "拆分L后B = " << endl;
-	ListPrint(B);
-	cout << "拆分L后C = " << endl;
-	ListPrint(C);
-	cout << "拆分L后L = " << endl;
-	ListPrint(L);
 }
 
